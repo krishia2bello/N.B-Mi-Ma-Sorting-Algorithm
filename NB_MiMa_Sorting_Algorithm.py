@@ -1,11 +1,11 @@
 def sort_list(list_of_integers):
-    list_input = list_of_integers					       # copying the input list for execution
-    sorted_list = []									   # defining the new(sorted) list
+    list_input = list_of_integers                          # copying the input list for execution
+    sorted_list = []                                       # defining the new(sorted) list
     min_index = 0                                          # defining the index of the minimum value to be inserted in the new list
     max_index = 1                                          # defining the index of the maximum value to be inserted in the new list
-    while len(list_input) != 0:							   # while there is still an integer in the input list
-        sorted_list.insert(min_index, min(list_input)) 	   # inserting the least value of the input list to the new list
-        list_input.remove(min(list_input))  			   # removing what was inserted from the previous line
+    while len(list_input) != 0:                            # while there is still an integer in the input list
+        sorted_list.insert(min_index, min(list_input))     # inserting the least value of the input list to the new list
+        list_input.remove(min(list_input))                 # removing what was inserted from the previous line
         min_index = min_index + 1                          # setting the next index of the least value to be inserted in the new list
         if len(list_input) != 0:                           # if there are still integers in the list remaining
             sorted_list.insert(max_index, max(list_input)) # insert the greatest value of the input list to the new list
